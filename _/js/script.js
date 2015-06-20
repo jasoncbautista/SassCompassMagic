@@ -1,1 +1,1 @@
-function test(){return"hello world 50!"}var f=30;
+function test(){return"hello world 70!"}var f=30;

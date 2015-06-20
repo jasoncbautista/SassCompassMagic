@@ -9,19 +9,27 @@ module.exports = function(grunt){
 			my_target: {
 				files: {
 					'_/js/script.js': ['_/components/js/*.js' ]
-				} // files 
+				} // files
 
 			} // my_target
 		} // uglify
 		,
 		watch: {
-			files: ['_/components/js/*.js'],
-			tasks: ['uglify']
+			options: { livereload: true },
+			scripts: {
+				files: ['_/components/js/*.js'],
+				tasks: ['uglify']
+			}, // scripts
+
+            html: {
+                files: ["*.html"]
+            }
 
 		} // watch
 
 	}); // initConfig
 	grunt.registerTask('default', 'watch');
+
 
 
 } // exports

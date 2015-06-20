@@ -1,4 +1,4 @@
 function test(){
 
-	return "hello world 50!"; 
+	return "hello world 70!"; 
 }
