@@ -2,9 +2,7 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks("grunt-contrib-uglify");
 	grunt.loadNpmTasks("grunt-contrib-watch");
 
-
 	grunt.initConfig({
-
 
 		uglify: {
 
@@ -22,10 +20,8 @@ module.exports = function(grunt){
 
 		} // watch
 
-
 	}); // initConfig
-	
-
+	grunt.registerTask('default', 'watch');
 
 
 } // exports
