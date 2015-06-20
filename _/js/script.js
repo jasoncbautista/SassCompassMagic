@@ -1,0 +1,1 @@
+function test(){return"hello world 40!"}var f=30;
