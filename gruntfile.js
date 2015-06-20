@@ -12,8 +12,16 @@ module.exports = function(grunt){
 				} // files
 
 			} // my_target
-		} // uglify
-		,
+		}, // uglify
+
+        compass: {
+            dev: {
+                options: {
+                    config: 'config.rb'
+                } // options
+            } // dev
+        },  // compass
+
 		watch: {
 			options: { livereload: true },
 			scripts: {
@@ -21,6 +29,11 @@ module.exports = function(grunt){
 				tasks: ['uglify']
 			}, // scripts
 
+            sass: {
+                files: [ '_/components/sass/*.scss'],
+                tasks: ['compass:dev']
+
+            }, //sass
             html: {
                 files: ["*.html"]
             }
